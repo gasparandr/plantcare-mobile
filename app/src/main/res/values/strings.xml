@@ -1,3 +1,4 @@
 <resources>
     <string name="app_name">Plantcare</string>
+    <string name="login_social_network_text">Or log in with Facebook, Twitter or Google</string>
 </resources>
