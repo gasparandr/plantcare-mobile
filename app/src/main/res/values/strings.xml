@@ -13,7 +13,17 @@
     <string name="welcome_back">Welcome Back!</string>
     <string name="create_your_account">Create Your Account!</string>
     <string name="lorem_text">Arcu aptent placerat blandit quis, lectus sit orci net ut. Eleifnd ut mauris</string>
+    <string name="lorem_text_2">Non suspendisse mi eu et sem, commodo hymenaeos aliquet felis magna.</string>
+    <string name="lorem_text_3">Mi eu et sem, commodo hymenaeos aliquet felis magna.</string>
     <string name="my_plants">My Plants</string>
+    <string name="manage_moderators">Manage Moderators</string>
+    <string name="share">Share</string>
+    <string name="delete">Delete</string>
+    <string name="moderators">moderators</string>
+    <string name="invite_moderators">Invite moderators</string>
+    <string name="enter_email">enter email</string>
+    <string name="add_new"><u>Add new</u></string>
+    <string name="close">Close</string>
 
 
 </resources>

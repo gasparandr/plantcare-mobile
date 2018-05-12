@@ -20,10 +20,10 @@
             android:screenOrientation="portrait"
             android:noHistory="true">
 
-            <!--<intent-filter>-->
-                <!--<action android:name="android.intent.action.MAIN" />-->
-                <!--<category android:name="android.intent.category.LAUNCHER" />-->
-            <!--</intent-filter>-->
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
 
         </activity>
 
@@ -32,14 +32,16 @@
         <activity
             android:name=".screen.home.HomeActivity"
             android:screenOrientation="portrait"
-            android:label="@string/my_plants" >
+            android:label="@string/my_plants" />
 
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
-                <category android:name="android.intent.category.LAUNCHER" />
-            </intent-filter>
 
-        </activity>
+
+        <!-- Manage Moderators -->
+        <activity
+            android:name=".screen.manage_moderators.ManageModeratorsActivity"
+            android:screenOrientation="portrait"
+            android:label="@string/my_plants"
+            android:windowSoftInputMode="adjustPan"/>
 
 
 

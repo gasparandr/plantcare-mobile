@@ -14,6 +14,15 @@
     <color name="colorTertiary">#CCD2Cf</color>
     <color name="colorQuaternary">#F8F8F8</color>
 
+    <color name="colorSecondaryButton">#1997f0</color>
+
+
+    <color name="color_user_one_bg">#ffe4e4</color>
+    <color name="color_user_one_fg">#fb5858</color>
+
+    <color name="color_user_two_bg">#f1e5ff</color>
+    <color name="color_user_two_fg">#a458fb</color>
+
 
     <color name="color_percent_one_start">#f55045</color>
     <color name="color_percent_one_end">#fd8253</color>

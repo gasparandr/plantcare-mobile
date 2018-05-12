@@ -1,0 +1,223 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_marginTop="@dimen/screenTopPadding">
+
+
+    <RelativeLayout
+        android:id="@+id/v_header"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="20dp"
+        android:paddingBottom="20dp"
+        android:paddingStart="25dp"
+        android:paddingEnd="30dp">
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:fontFamily="@font/montserrat_semibold"
+            android:textSize="@dimen/textXL"
+            android:text="Manage Moderators"/>
+
+
+        <ImageView
+            android:id="@+id/v_close_screen"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:layout_centerVertical="true"
+            android:layout_alignParentEnd="true"
+            android:src="@drawable/ic_close"/>
+
+    </RelativeLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:layout_below="@id/v_header"
+        android:paddingStart="25dp"
+        android:paddingEnd="25dp"
+        android:clipToPadding="false"
+        android:focusableInTouchMode="true">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/montserrat_semibold"
+            android:textAllCaps="true"
+            android:textColor="@color/colorAccent"
+            android:textSize="@dimen/textM"
+            android:text="@string/moderators"
+            android:layout_marginBottom="3dp"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/colorSecondary"
+            android:layout_marginEnd="50dp"
+            android:textSize="@dimen/textM"
+            android:text="@string/lorem_text_2"/>
+
+
+
+
+        <LinearLayout
+            android:id="@+id/v_user_list"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginTop="20dp"
+            android:layout_marginBottom="20dp">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="15dp">
+
+                <carbon.widget.TextView
+                    android:id="@+id/v_user_one_icon"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:background="@color/color_user_one_bg"
+                    android:textColor="@color/color_user_one_fg"
+                    app:carbon_cornerRadius="40dp"
+                    android:fontFamily="@font/montserrat_semibold"
+                    android:textSize="@dimen/textL"
+                    android:gravity="center"
+                    android:text="MU"
+                    android:layout_marginEnd="15dp"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="@dimen/textL"
+                    android:text="Mobile User (Owner)"
+                    android:layout_toEndOf="@id/v_user_one_icon"
+                    android:layout_centerVertical="true"/>
+
+            </RelativeLayout>
+
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="15dp">
+
+                <carbon.widget.TextView
+                    android:id="@+id/v_user_two_icon"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:background="@color/color_user_two_bg"
+                    android:textColor="@color/color_user_two_fg"
+                    app:carbon_cornerRadius="40dp"
+                    android:fontFamily="@font/montserrat_semibold"
+                    android:textSize="@dimen/textL"
+                    android:gravity="center"
+                    android:text="BG"
+                    android:layout_marginEnd="15dp"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="@dimen/textL"
+                    android:text="Barton George"
+                    android:layout_toEndOf="@id/v_user_two_icon"
+                    android:layout_centerVertical="true"/>
+                
+                <ImageView
+                    android:id="@+id/v_remove_user"
+                    android:layout_width="37dp"
+                    android:layout_height="37dp"
+                    android:padding="10dp"
+                    android:layout_alignParentEnd="true"
+                    android:layout_centerVertical="true"
+                    android:translationY="2dp"
+                    android:src="@drawable/ic_remove_moderator"/>
+
+            </RelativeLayout>
+
+
+            <ImageView
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:src="@drawable/ic_add_moderator"/>
+
+        </LinearLayout>
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/montserrat_semibold"
+            android:textAllCaps="true"
+            android:textColor="@color/colorAccent"
+            android:textSize="@dimen/textM"
+            android:text="@string/invite_moderators"
+            android:layout_marginBottom="3dp"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="70dp"
+            android:layout_marginBottom="25dp"
+            android:textColor="@color/colorSecondary"
+            android:textSize="@dimen/textM"
+            android:text="@string/lorem_text_3"/>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="42dp"
+            android:background="@drawable/input_bg">
+
+            <EditText
+                android:id="@+id/v_email"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@android:color/transparent"
+                android:paddingStart="20dp"
+                android:paddingEnd="20dp"
+                android:textSize="@dimen/textM"
+                android:hint="@string/enter_email"
+                android:inputType="textEmailAddress" />
+
+        </RelativeLayout>
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/colorAccent"
+            android:textSize="@dimen/textM"
+            android:text="@string/add_new"
+            android:layout_marginTop="20dp"
+            android:layout_marginBottom="20dp"/>
+
+
+        <Button
+            android:id="@+id/v_action_button"
+            android:layout_width="match_parent"
+            android:layout_height="42dp"
+            android:background="@drawable/gradient_bg"
+            android:text="@string/close"
+            android:fontFamily="@font/montserrat_semibold"
+            android:textColor="@color/white"
+            android:textSize="@dimen/textM"
+            android:textAllCaps="false"/>
+
+
+    </LinearLayout>
+
+
+
+
+
+
+
+</RelativeLayout>

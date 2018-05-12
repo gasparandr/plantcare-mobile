@@ -52,7 +52,6 @@
             android:layout_toStartOf="@id/v_button_search"
             android:src="@drawable/ic_notifications"
             android:layout_marginEnd="26dp"/>
-        
 
     </RelativeLayout>
     
@@ -67,41 +66,34 @@
         android:textColor="@color/colorTertiary"
         android:text="2/6"
         android:fontFamily="@font/montserrat_semibold"/>
-    
+
     
     <com.yarolegovich.discretescrollview.DiscreteScrollView
         android:id="@+id/v_card_list"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_below="@id/v_card_position"
-        android:background="@color/colorAccent"/>
+        android:translationY="-5dp"
+        android:paddingBottom="55dp"
+        android:clipToPadding="false"/>
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+    <Button
+        android:id="@+id/v_button_water"
+        android:layout_width="@dimen/card_width"
+        android:layout_height="42dp"
+        android:layout_marginTop="5dp"
+        android:layout_below="@id/v_card_list"
+        android:background="@drawable/secondary_button_bg"
+        android:layout_centerHorizontal="true"
+        android:fontFamily="@font/montserrat_semibold"
+        android:textSize="@dimen/textS"
+        android:textColor="@color/white"
+        android:textAllCaps="false"
+        android:drawableStart="@drawable/ic_water_drop_light"
+        android:paddingStart="27dp"
+        android:paddingEnd="27dp"
+        android:text="Water Mobile User plant group 1"/>
 
 
     <android.support.design.widget.FloatingActionButton
@@ -110,7 +102,9 @@
         android:src="@drawable/ic_add"
         android:layout_alignParentBottom="true"
         android:layout_centerHorizontal="true"
-        android:layout_margin="30dp"/>
+        android:layout_margin="30dp"
+        android:clickable="true"
+        android:focusable="true" />
 
 
 </RelativeLayout>
