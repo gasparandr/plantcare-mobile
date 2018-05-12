@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:paddingTop="@dimen/screenTopPadding"
+    android:paddingStart="25dp"
+    android:paddingEnd="25dp"
+    android:clipToPadding="false">
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/montserrat_semibold"
+        android:textSize="@dimen/textL"
+        android:text="@string/create_your_account"
+        android:gravity="center"/>
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="20dp"
+        android:lineSpacingExtra="3dp"
+        android:gravity="center"
+        android:textSize="@dimen/textXS"
+        android:textColor="@color/colorSecondary"
+        android:text="@string/lorem_text"/>
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="42dp"
+        android:background="@drawable/input_bg"
+        android:layout_marginBottom="10dp">
+
+        <ImageView
+            android:id="@+id/v_icon_user"
+            android:layout_width="15dp"
+            android:layout_height="17.5dp"
+            android:layout_marginStart="13dp"
+            android:layout_centerVertical="true"
+            android:src="@drawable/ic_user" />
+
+        <EditText
+            android:id="@+id/v_username"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@android:color/transparent"
+            android:layout_toEndOf="@id/v_icon_user"
+            android:paddingStart="10dp"
+            android:paddingEnd="10dp"
+            android:textSize="@dimen/textM"
+            android:hint="@string/name"
+            android:inputType="textCapWords" />
+
+    </RelativeLayout>
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="42dp"
+        android:background="@drawable/input_bg"
+        android:layout_marginBottom="10dp">
+
+        <ImageView
+            android:id="@+id/v_icon_email"
+            android:layout_width="15dp"
+            android:layout_height="11.5dp"
+            android:layout_marginStart="13dp"
+            android:layout_centerVertical="true"
+            android:src="@drawable/ic_email"
+            android:translationY="1dp" />
+
+        <EditText
+            android:id="@+id/v_email"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@android:color/transparent"
+            android:layout_toEndOf="@id/v_icon_email"
+            android:paddingStart="10dp"
+            android:paddingEnd="10dp"
+            android:textSize="@dimen/textM"
+            android:hint="@string/email"
+            android:inputType="textEmailAddress" />
+
+    </RelativeLayout>
+
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="42dp"
+        android:background="@drawable/input_bg"
+        android:layout_marginBottom="10dp">
+
+        <ImageView
+            android:id="@+id/v_icon_password"
+            android:layout_width="15dp"
+            android:layout_height="15dp"
+            android:layout_marginStart="13dp"
+            android:layout_centerVertical="true"
+            android:src="@drawable/ic_password"/>
+
+        <EditText
+            android:id="@+id/v_password"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@android:color/transparent"
+            android:layout_toEndOf="@id/v_icon_password"
+            android:paddingStart="10dp"
+            android:paddingEnd="10dp"
+            android:textSize="@dimen/textM"
+            android:hint="@string/password"
+            android:inputType="textPassword"/>
+
+    </RelativeLayout>
+
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="42dp"
+        android:background="@drawable/gradient_bg"
+        android:text="@string/sign_up"
+        android:fontFamily="@font/montserrat_semibold"
+        android:textColor="@color/white"
+        android:textSize="@dimen/textM"
+        android:textAllCaps="false"/>
+
+
+
+
+
+
+</LinearLayout>

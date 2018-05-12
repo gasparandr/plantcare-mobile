@@ -7,7 +7,7 @@
     <dimen name="textXS">9sp</dimen>
     <dimen name="textS">10sp</dimen>
     <dimen name="textM">12.5sp</dimen>
-    <dimen name="textL">14dp</dimen>
+    <dimen name="textL">14sp</dimen>
 
     <dimen name="layoutRadius">25dp</dimen>
     <dimen name="widgetRadius">5dp</dimen>

@@ -1,6 +1,7 @@
 package com.ildiesign.plantcare.connection.service
 
 import com.ildiesign.plantcare.connection.model.service.AuthModel
+import com.ildiesign.plantcare.connection.model.service.LoginResponseModel
 import retrofit2.Call
 import retrofit2.http.Body
 import retrofit2.http.POST
@@ -13,7 +14,7 @@ interface IService {
     fun login(
         @Url url: String,
         @Body data: AuthModel
-    ) : Call<String>
+    ) : Call<LoginResponseModel>
 
 
 }

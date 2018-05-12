@@ -12,7 +12,7 @@ object Service {
 
     private val TAG = this::class.simpleName
 
-    private const val SERVICE_URL = "http://"
+    private const val SERVICE_URL = "http://10.10.0.42:1337"
 
     private lateinit var instance: IService
 

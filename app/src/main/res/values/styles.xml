@@ -10,7 +10,7 @@
         <item name="android:windowAllowReturnTransitionOverlap">true</item>
 
         <item name="android:colorControlActivated">@color/colorAccent</item>
-        <item name="android:colorControlNormal">@color/colorSecondary</item>
+        <item name="android:colorControlNormal">@color/colorTertiary</item>
 
         <item name="colorPrimary">@color/colorPrimary</item>
         <item name="colorPrimaryDark">@color/colorPrimaryDark</item>

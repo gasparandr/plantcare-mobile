@@ -1,6 +1,117 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout
-    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
-    android:layout_height="match_parent">
 
-</RelativeLayout>
+<carbon.widget.RelativeLayout
+    android:id="@+id/v_root"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    
+    <RelativeLayout
+        android:id="@+id/v_header"
+        android:layout_width="match_parent"
+        android:layout_height="158dp"
+        android:paddingTop="@dimen/screenTopPadding"
+        android:background="@drawable/header_bg">
+        <ImageView
+            android:layout_width="120dp"
+            android:layout_height="wrap_content"
+            android:src="@drawable/header_logo"
+            android:layout_centerInParent="true"/>
+    </RelativeLayout>
+
+
+    <carbon.widget.RelativeLayout
+        android:layout_width="310dp"
+        android:layout_height="match_parent"
+        android:paddingTop="15dp"
+        android:paddingBottom="15dp"
+        android:layout_below="@id/v_header"
+        android:layout_centerHorizontal="true"
+        android:background="@color/white"
+        app:carbon_elevation="50dp"
+        app:carbon_elevationShadowColor="@color/colorPrimaryDark"
+        app:carbon_cornerRadius="@dimen/layoutRadius"
+        android:translationY="-30dp">
+
+
+        <android.support.design.widget.TabLayout
+            android:id="@+id/v_tab_layout"
+            style="@style/TabLayout" />
+
+
+        <android.support.v4.view.ViewPager
+            android:id="@+id/v_viewpager"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/v_tab_layout"/>
+
+        <LinearLayout
+            android:layout_width="240dp"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true">
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/colorSecondary" />
+            
+            
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/login_social_network_text"
+                android:paddingTop="10dp"
+                android:paddingBottom="15dp"
+                android:gravity="center"
+                android:textColor="@color/colorSecondary"
+                android:textSize="@dimen/textXS"/>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:weightSum="1"
+                android:layout_marginStart="10dp"
+                android:layout_marginEnd="10dp">
+
+
+                <ImageButton
+                    android:layout_width="63dp"
+                    android:layout_height="36dp"
+                    android:background="@android:color/transparent"
+                    android:src="@drawable/ic_facebook"
+                    android:scaleType="fitCenter"
+                    android:layout_weight="0.33"/>
+
+                <ImageButton
+                    android:layout_width="63dp"
+                    android:layout_height="36dp"
+                    android:background="@android:color/transparent"
+                    android:src="@drawable/ic_twitter"
+                    android:scaleType="fitCenter"
+                    android:layout_weight="0.33"/>
+
+                <ImageButton
+                    android:layout_width="63dp"
+                    android:layout_height="36dp"
+                    android:background="@android:color/transparent"
+                    android:src="@drawable/ic_google"
+                    android:scaleType="fitCenter"
+                    android:layout_weight="0.33"/>
+
+
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+
+    </carbon.widget.RelativeLayout>
+    
+    
+
+</carbon.widget.RelativeLayout>
