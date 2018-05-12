@@ -14,4 +14,14 @@
     <color name="colorTertiary">#CCD2Cf</color>
     <color name="colorQuaternary">#F8F8F8</color>
 
+
+    <color name="color_percent_one_start">#f55045</color>
+    <color name="color_percent_one_end">#fd8253</color>
+
+    <color name="color_percent_two_start">#FFAE49</color>
+    <color name="color_percent_two_end">#FFD36E</color>
+
+    <color name="color_percent_three_start">#2BDB3D</color>
+    <color name="color_percent_three_end">#6FEE3B</color>
+
 </resources>

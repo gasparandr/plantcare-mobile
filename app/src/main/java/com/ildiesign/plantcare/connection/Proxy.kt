@@ -12,12 +12,10 @@ object Proxy {
     private val service by lazy { Service.getInstance() }
 
 
+
+
     fun login( data: AuthModel, successCB: ( result: LoginResponseModel ) -> Unit ) {
-
-        val path = "login"
-
-        service.login( path, data ).enqueue( CallbackWrapper( successCB ) )
-
+        service.login( data ).enqueue( CallbackWrapper( successCB ) )
     }
 
 

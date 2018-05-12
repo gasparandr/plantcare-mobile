@@ -10,9 +10,8 @@ import retrofit2.http.Url
 interface IService {
 
 
-    @POST
+    @POST("login")
     fun login(
-        @Url url: String,
         @Body data: AuthModel
     ) : Call<LoginResponseModel>
 

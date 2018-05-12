@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginTop="@dimen/screenTopPadding"
+    android:background="@color/colorQuaternary">
+
+
+    <RelativeLayout
+        android:id="@+id/v_header"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingStart="25dp"
+        android:paddingEnd="25dp"
+        android:paddingTop="15dp"
+        android:paddingBottom="15dp">
+
+        
+        <ImageView
+            android:id="@+id/v_button_menu"
+            android:layout_width="25dp"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_menu"/>
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:text="@string/my_plants"
+            android:layout_marginStart="26dp"
+            android:layout_toEndOf="@id/v_button_menu"
+            android:fontFamily="@font/montserrat_semibold"
+            android:textSize="@dimen/textXL"/>
+
+
+        <ImageView
+            android:id="@+id/v_button_search"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:layout_centerVertical="true"
+            android:layout_alignParentEnd="true"
+            android:src="@drawable/ic_search"/>
+
+
+        <ImageView
+            android:layout_width="21dp"
+            android:layout_height="25dp"
+            android:layout_centerVertical="true"
+            android:layout_toStartOf="@id/v_button_search"
+            android:src="@drawable/ic_notifications"
+            android:layout_marginEnd="26dp"/>
+        
+
+    </RelativeLayout>
+    
+    
+    
+    <TextView
+        android:id="@+id/v_card_position"
+        android:layout_width="@dimen/card_width"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/v_header"
+        android:textColor="@color/colorTertiary"
+        android:text="2/6"
+        android:fontFamily="@font/montserrat_semibold"/>
+    
+    
+    <com.yarolegovich.discretescrollview.DiscreteScrollView
+        android:id="@+id/v_card_list"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/v_card_position"
+        android:background="@color/colorAccent"/>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <android.support.design.widget.FloatingActionButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/ic_add"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_margin="30dp"/>
+
+
+</RelativeLayout>
