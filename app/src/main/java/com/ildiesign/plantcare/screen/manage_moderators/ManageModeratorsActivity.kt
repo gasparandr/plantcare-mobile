@@ -4,7 +4,6 @@ import android.os.Bundle
 import android.support.v7.app.AppCompatActivity
 import android.text.Editable
 import android.text.TextWatcher
-import android.util.Log
 import android.util.Patterns
 import android.view.View
 import android.widget.Toast
@@ -14,7 +13,6 @@ import com.ildiesign.plantcare.connection.Proxy
 import com.ildiesign.plantcare.connection.model.service.BaseResponseModel
 import com.ildiesign.plantcare.connection.model.service.InviteModel
 import kotlinx.android.synthetic.main.activity_manage_moderators.*
-import okhttp3.ResponseBody
 
 
 class ManageModeratorsActivity : AppCompatActivity() {
@@ -98,7 +96,7 @@ class ManageModeratorsActivity : AppCompatActivity() {
                 User.name!!
             ),
 
-            ::inviteSuccess
+            ::inviteResult
         )
 
 
@@ -106,7 +104,7 @@ class ManageModeratorsActivity : AppCompatActivity() {
 
 
 
-    private fun inviteSuccess( result: BaseResponseModel ) {
+    private fun inviteResult( result: BaseResponseModel ) {
 
         if ( result.success ) v_email.text.clear()
 

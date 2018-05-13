@@ -11,14 +11,14 @@ object PlantGroupGenerator {
     private val plants = intArrayOf( 6, 13, 5, 11, 9, 5, 6 )
     private val lastWatered = Array( 7 ) { "yesterday" }
     private val nextWatering = arrayOf( "16 May 2018", "21 May 2018", "14 May 2018", "23 May 2018", "25 May 2018", "18 May 2018", "15 May 2018"  )
-    private val percent = intArrayOf( 24, 75, 43, 18, 51, 81, 38 )
+    private val percent = intArrayOf( 23, 75, 43, 18, 51, 81, 38 )
 
 
     fun getFullCardlist( plantGroupList: List<PlantGroupModel> ): ArrayList<FullPlantGroupModel> =
 
         arrayListOf<FullPlantGroupModel>().apply {
 
-            for ( i in plantGroupList.indices ) {
+            for ( i in 0 until minOf( plantGroupList.size, species.size ) ) {
 
                 add(
                     FullPlantGroupModel(

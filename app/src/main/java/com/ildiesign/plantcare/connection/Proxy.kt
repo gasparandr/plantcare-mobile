@@ -6,7 +6,9 @@ import com.ildiesign.plantcare.connection.model.service.BaseResponseModel
 import com.ildiesign.plantcare.connection.model.service.InviteModel
 import com.ildiesign.plantcare.connection.model.service.LoginResponseModel
 import com.ildiesign.plantcare.connection.service.Service
-import okhttp3.ResponseBody
+
+
+
 
 object Proxy {
 
